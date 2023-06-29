@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply px-4 py-3 mt-1 inline-block 
+        rounded-lg uppercase text-xs tracking-wider 
+        font-semibold sm:text-base focus:outline-none
+        focus:ring focus:ring-offset-2 focus:ring-opacity-50
+    }
+
+    .btn-primary {
+        @apply bg-indigo-500 hover:bg-indigo-400 
+        transform hover:-translate-y-0.5 transition shadow-lg
+        focus:ring-indigo-500 active:bg-indigo-800 
+        text-white
+    }
+
+    .btn-secondary {
+        @apply bg-gray-300 hover:bg-gray-200 
+        focus:ring-gray-300 active:bg-gray-600 text-gray-800
+    }
+}
